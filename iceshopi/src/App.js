@@ -33,6 +33,8 @@ import LoginPage from './component/LoginPage';
 import AccountPage from './component/AccountPage';
 import IceCreamBuyPage from './component/IceCreamBuyPage';
 
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (

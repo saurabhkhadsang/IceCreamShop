@@ -1,0 +1,124 @@
+.card {
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    ;
+}
+
+
+.cardlarge:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+
+.button_card:hover{
+    background-color: #ff1281;
+}
+
+.button_card{
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 140px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #ff55a3;
+    height: 44px;
+
+}
+
+.unsuccessful {
+    color: red;
+  }
+  
+  .successful {
+    color: green;
+  }
+  
+
+
+
+
+
+
+
+
+
+/* ==================================================================== */
+
+.card-wrapper {
+    /* display: inline-block; */
+    /* perspective: 1000px; */
+}
+.card-wrapper .card {
+    /* position: relative; */
+    cursor: pointer;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+}
+.card-wrapper .card .front, .card-wrapper .card .back {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    /* width: 100%;
+    height: 100%; */
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+.card-wrapper .card .front {
+    /* z-index: 2; */
+}
+.card-wrapper .card .back, .card-wrapper.flip-right .card .back {
+    transform: rotateY(180deg);
+}
+.card-wrapper:hover .card, .card-wrapper.flip-right:hover .card {
+    transform: rotateY(180deg);
+}
+
+body {
+    /* background: #E7BDD6; */
+}
+.card-wrapper, .card {
+    /* width: 200px;
+    height: 200px;  */
+    /* margin: 10px; */
+}
+.card .front, .card .back {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border: 1px solid #FC545E; */
+    /* border-radius: 4px; */
+}
+.card .front {
+    /* color: #FC545E; */
+    /* background: #FFFFFF; */
+    /* font-weight: 700; */
+    /* font-size: 1rem; */
+}
+/* .card .back {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background: #FC545E;
+} */
+
+
+.moveup{
+    position: absolute;
+    top: -11rem;
+    left: 0;
+}

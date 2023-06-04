@@ -1,0 +1,112 @@
+.button-left:hover {
+    color: #fff;
+    background-color: #9355ff;
+}
+
+.button-right:hover {
+    color: #fff;
+    background-color: #ff55a3;
+}
+
+.button-left {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #ffffff;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    /* display: inline-block; */
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    /* border-radius: 500px; */
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 20;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 900;
+    text-align: center;
+    /* padding: 16px 14px 18px; */
+    color: #ffffff;
+    background-color: #ff55a3;
+    ;
+    height: 44px;
+}
+
+.button-right {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #00ff00;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    /* display: inline-block; */
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    /* border-radius: 500px; */
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 90;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 900;
+    text-align: center;
+    /* padding: 16px 14px 18px; */
+    color: #fff;
+    background-color: #9355ff;
+    height: 44px;
+
+
+}
+
+.button_buy_page:hover {
+    background-color: #ff1281;
+}
+
+.button_buy_page {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 120px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #ff55a3;
+    height: 44px;
+
+}
+
+
+
+
+
+.unsuccessful {
+    color: red;
+}
+
+.successful {
+    color: green;
+}

@@ -9,8 +9,12 @@
 
 .env
 
+/backup.js
+backup.js
+
 # testing
 /coverage
+
 
 # production
 /build

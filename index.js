@@ -48,7 +48,7 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 
 app.post('/adduser', async (req, res) => {
-  console.log("add user");
+  // console.log("add user");
   // console.log(req.body);
   // const { email, name } = req.body;
   let email = req.body.email;
@@ -105,9 +105,9 @@ app.post('/accoutndetail', async (req, res) => {
 // access any resource from razorpay
 const razorpayInstance = new Razorpay({
   // Replace with your key_id
-  key_id: 'rzp_test_l3FdVIXIj8SUnV',
+  key_id: process.env.RAZORPAY_KEY_ID,
   // Replace with your key_secret
-  key_secret: 'vAeeuQwANMbPjVnZqlUJ4Cxo'
+  key_secret: process.env.RAZORPAY_KEY_SECRET
 });
 
 
@@ -216,7 +216,7 @@ app.post('/userdetail', async (req, res) => {
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello World! Sweet Scoops App !')
 })
 
 app.listen(port, () => {
