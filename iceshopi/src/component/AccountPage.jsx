@@ -32,13 +32,12 @@ const AccountPage = () => {
 
 
 
-
   useEffect(() => {
     if (isAuthenticated) {
       // Make API call to fetch user data
       const fetchData = async () => {
         try {
-          const response = await axios.post('http://localhost:9002/accoutndetail', { email: user.email });
+          const response = await axios.post('https://sweetscoops.onrender.com/accoutndetail', { email: user.email });
           const sortedHistory = response.data.history.sort((a, b) => b.created_at - a.created_at);
           setUserData({ ...response.data, history: sortedHistory });
           console.log("response.data");

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
 // import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { SocialIcon } from 'react-social-icons';
@@ -38,6 +38,7 @@ import ab3 from "../img/ab3.jpg";
 
 
 const LandingPage = () => {
+  const { user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
   // const { user, isAuthenticated, isLoading } = useAuth0();
 
   // if (isLoading) {
@@ -65,6 +66,18 @@ const LandingPage = () => {
                     Indulge in our handcrafted ice cream flavors made with the freshest
                     ingredients. Browse our menu and place your order today!
                   </p>
+
+                  {isAuthenticated ? (
+                    <>
+                      <button className='button_card mx-auto my-2' onClick={() => navigate("/buyicecream")} >Explore </button>
+                    </>
+                  ) : (
+                    <>
+                      <button className='button_card mx-auto my-2' onClick={() => loginWithRedirect()} >Login </button>
+                    </>
+                  )}
+
+                  
                 </div>
                 <img src={img2} alt="Responsive Image" className="img-fluid " />
               </div>

@@ -45,7 +45,7 @@ const IceCreamBuyPage = () => {
   function register() {
     console.log("IN reg");
     axios
-      .post('http://localhost:9002/adduser', user)
+      .post('https://sweetscoops.onrender.com/adduser', user)
       .then(response => {
         console.log(response);
       })
@@ -151,7 +151,7 @@ const IceCreamBuyPage = () => {
   //   };
 
   //   axios
-  //     .post('http://localhost:9002/createOrder', orderData)
+  //     .post('https://sweetscoops.onrender.com/createOrder', orderData)
   //     .then(response => {
   //       const order = response.data;
   //       // Perform any necessary action with the order data (e.g., save it in user history)
@@ -181,7 +181,7 @@ const IceCreamBuyPage = () => {
     };
 
     axios
-      .post('http://localhost:9002/createOrder', orderData)
+      .post('https://sweetscoops.onrender.com/createOrder', orderData)
       .then(response => {
         const order = response.data;
         // Redirect the user to the Razorpay checkout page
@@ -208,7 +208,7 @@ const IceCreamBuyPage = () => {
               razorpay_order_id: response.razorpay_order_id
             };
             axios
-              .post('http://localhost:9002/paymentSuccess', paymentData)
+              .post('https://sweetscoops.onrender.com/paymentSuccess', paymentData)
               .then(response => {
                 console.log(response.data.message);
               })
