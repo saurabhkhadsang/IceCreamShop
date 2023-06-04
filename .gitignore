@@ -10,7 +10,7 @@
 .env
 
 /backup.js
-backup.js
+.backup.js
 
 # testing
 /coverage
