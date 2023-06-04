@@ -326,23 +326,24 @@ const LandingPage = () => {
             </p>
           </div>
           <div className="col">
-            <h5>TWITTER FEED</h5>
-            <a className="twitter-timeline" href="https://twitter.com/SweetScoops?ref_src=twsrc%5Etfw">@SweetScoops</a>
+            <h5>Github Repo</h5>
+            <div className="col"><SocialIcon url="https://github.com/saurabhkhadsang/IceCreamShop" /></div>
+            <a className="twitter-timeline" target="_blank" href="https://github.com/saurabhkhadsang/IceCreamShop">Sweet Scoops</a>
           </div>
           <div className="col">
             <h5>GET IN TOUCH</h5>
             <p>
               Join our mailing list to stay up to date and get notices about our new releases! <br />
-              Email: <a href="mailto:info@SweetScoops.in">info@treaticecream.in</a>
+              Email: <a href="mailto:info@SweetScoops.in">info@SweetScoops.in</a>
             </p>
           </div>
 
           <div className="col">
             <h5>FOLLOW US</h5>
             <div className="row row-cols-2 row-cols-md-4 g-4 mt-0.5">
+            <div className="col"><SocialIcon url="https://github.com/saurabhkhadsang/IceCreamShop" /></div>
               <div className="col"><SocialIcon url="https://instagram.com" /></div>
               <div className="col"><SocialIcon url="https://facebook.com/" /></div>
-              <div className="col"><SocialIcon url="https://discord.com/" /></div>
               <div className="col"><SocialIcon url="https://twitter.com/jaketrent" /></div>
             </div>
           </div>
